@@ -1,21 +1,21 @@
 function userName(name1, name2) {
     alert(`Welcome, ${name1} ${name2}!`)
+    let userAge = parseInt(prompt('Input your age'))
+    checkAge(userAge)
 }
 
 const checkAge = function(age) {
-    if (age >= 18) {
-        alert('You are old enough')
-    } else if (age < 18 && age >= 0) {
-        alert('You are still young')
+    if (age >= 19) {
+        alert(`${firstName} ${lastName}, You are old enough`)
+    } else if (age < 19 && age >= 0) {
+        alert(`${firstName} ${lastName}, You are still young`)
     } else {
-        alert('You are not born yet')
+        alert(`${firstName} ${lastName}, You are not born yet`)
     }
 }
 
 
-let firstName = prompt(`Input your first name`)
-let lastName = prompt(`Input your last name`)
-let userAge = parseInt(prompt('Input your age'))
+let firstName = prompt(`Input your first name`);
+let lastName = prompt(`Input your last name`);
 
-userName(firstName, lastName)
-checkAge(userAge)
+userName(firstName, lastName);
